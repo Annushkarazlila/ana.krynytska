@@ -3,29 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Fluid Demo</title>
+    <title>About Me - Cassidy Harman</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f9f5f3;
+            color: #3b2c35;
+        }
+        .name-header {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #c8a675; /* Header color */
+            padding: 20px 0;
         }
         header {
-            background-color: #444;
-            color: white;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
             padding: 10px 0;
-            text-align: center;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
         }
         nav {
-            margin: 0 auto;
-            max-width: 1200px;
-            text-align: center;
+            display: flex;
+            gap: 15px;
         }
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #3b2c35;
             text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .social-media {
+            display: flex;
+            gap: 15px;
+        }
+        .social-media a {
+            color: #3b2c35;
+            text-decoration: none;
+            font-size: 20px;
         }
         .container {
             max-width: 1200px;
@@ -36,48 +62,54 @@
             background-color: white;
             padding: 20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
             margin-bottom: 20px;
-        }
-        .about-section img {
-            max-width: 300px;
-            margin-right: 20px;
-        }
-        .about-section div {
-            max-width: 800px;
         }
         .about-section h2 {
             margin-top: 0;
+            color: #c8a9a0; /* Section title color */
+        }
+        .about-section p {
+            color: #3b2c35;
+        }
+        .about-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
+<div class="name-header">Cassidy Harman</div>
+
 <header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="nav-container">
+        <nav>
+            <a href="index.html">Blog</a>
+            <a href="about.html">Über mich</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+        <div class="social-media">
+            <a href="#">&#x1F426;</a> <!-- Twitter icon placeholder -->
+            <a href="#">&#x1F4F7;</a> <!-- Instagram icon placeholder -->
+            <a href="#">&#x1F465;</a> <!-- LinkedIn icon placeholder -->
+        </div>
+    </div>
 </header>
 
 <div class="container">
     <div class="about-section">
-        <img src="your-image-url.jpg" alt="About Image">
-        <div>
-            <h2>About Me</h2>
-            <p>
-                Welcome to my website! I am passionate about sharing my knowledge and experiences with the world. Through my blog, I aim to provide insightful and engaging content on a variety of topics that interest me.
-            </p>
-            <p>
-                My journey started in [your background or origin]. Over the years, I have [briefly mention your professional or personal experiences]. I believe in continuous learning and strive to inspire others to pursue their passions.
-            </p>
-            <p>
-                Thank you for visiting my site. Feel free to explore and connect with me!
-            </p>
-        </div>
+        <h2>About Me</h2>
+        <img src="your-image-url.jpg" alt="About Me">
+        <p>
+            Welcome to my website! I am passionate about sharing my knowledge and experiences with the world. Through my blog, I aim to provide insightful and engaging content on a variety of topics that interest me.
+        </p>
+        <p>
+            My journey started in [your background or origin]. Over the years, I have [briefly mention your professional or personal experiences]. I believe in continuous learning and strive to inspire others to pursue their passions.
+        </p>
+        <p>
+            Thank you for visiting my site. Feel free to explore and connect with me!
+        </p>
     </div>
 </div>
 
